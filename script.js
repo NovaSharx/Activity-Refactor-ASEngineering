@@ -3,7 +3,7 @@ function add(value1, value2) {
 }
 
 function subtract(value1, value2) {
-    return value1 + ' minus ' + value2 + ' = ' + value1 - value2
+    return value1 + ' minus ' + value2 + ' = ' + Number(value1 - value2)
 }
 
 function divide(value1, value2) {
@@ -14,10 +14,10 @@ function multiply(value1, value2) {
     return value1 + ' multiplied ' + value2 + ' = ' + value1 * value2
 }
 
-alert(add(14, 15))
-alert(divide(100, 20))
-alert(subtract(25, 4))
-alert(multiply(19, 3))
+console.log(add(14, 15))
+console.log(divide(100, 20))
+console.log(subtract(25, 4))
+console.log(multiply(19, 3))
 
 let now = new Date();
 
@@ -35,4 +35,4 @@ today =  days[now.getDay()] + ", " +
          date + ", " +
          (getFourDigits(now.getYear())) ;
 
-alert(today);
+console.log(today);
